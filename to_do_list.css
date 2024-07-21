@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg, #153677,#4e085f);
+    height: 100vh;
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+.header img{
+    width: 25px;
+}
+.todo{
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.add{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 214, 214);
+    height: 35px;
+    border-radius: 15px;
+    padding-left: 10px;
+
+}
+#input-box{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 1px;
+}
+#input-box:focus{
+    border: none;
+    outline: none;
+    font-weight: 14px;
+    
+}
+button{
+    width: 65px;
+    height: 35px;
+    background-color: rgb(255, 140, 0);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 140, 0, 0.671);
+}
+button:active{
+    background-color: rgb(249, 187, 112);
+}
+.add{
+    margin-bottom: 18px;
+}
+.checked{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.358);
+}
+ul li{
+    list-style: none;
+    margin: 20px 0;
+    position: relative;
+    left: 30px;
+    width: 280px;
+
+}
+ul li:hover{
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 0px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+}
+.checked::before{
+    background-image: url(checked.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 10px;
+    padding-left: 1px;
+}
+span img{
+    width: 8px;
+}
+span:hover{
+    background-color: rgba(0, 0, 0, 0.174);
+}
+.cd {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
